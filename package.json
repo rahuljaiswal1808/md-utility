@@ -1,0 +1,25 @@
+{
+  "name": "md-utility",
+  "version": "1.0.0",
+  "description": "A CLI utility for working with Markdown files",
+  "main": "src/index.js",
+  "bin": {
+    "md-utility": "src/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://local_proxy@127.0.0.1:35333/git/rahuljaiswal1808/md-utility"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "md-to-pdf": "^5.2.5"
+  }
+}
