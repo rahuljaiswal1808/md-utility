@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "md-utility"
+version = "1.0.0"
+description = "A CLI utility for working with Markdown files"
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.0",
+    "markdown>=3.5",
+    "weasyprint>=60",
+]
+
+[project.scripts]
+mdu = "md_utility.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["md_utility*"]
