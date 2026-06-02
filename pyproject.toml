@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-md-utility = "md_utility.cli:main"
+mdu = "md_utility.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
