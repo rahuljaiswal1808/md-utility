@@ -1,5 +1,6 @@
 import click
 from md_utility.commands.convert import to_pdf
+from md_utility.commands.to_docx import to_docx
 
 
 @click.group()
@@ -9,3 +10,4 @@ def main():
 
 
 main.add_command(to_pdf)
+main.add_command(to_docx)

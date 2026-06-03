@@ -41,3 +41,29 @@ mdu to-pdf README.md --paper-format Letter --landscape --margin 15mm
 # Custom stylesheet
 mdu to-pdf README.md --style my-theme.css
 ```
+
+### `mdu to-docx` — Convert Markdown to DOCX
+
+```bash
+mdu to-docx <input.md> [OPTIONS]
+```
+
+**Options:**
+
+| Option | Default | Description |
+|---|---|---|
+| `-o, --output <path>` | `<input>.docx` | Output DOCX file path |
+| `--reference-doc <file.docx>` | Word default | Reference .docx to inherit styles from |
+
+**Examples:**
+
+```bash
+# Basic conversion — outputs README.docx in the same directory
+mdu to-docx README.md
+
+# Custom output path
+mdu to-docx README.md -o docs/output.docx
+
+# Apply styles from an existing Word document
+mdu to-docx README.md --reference-doc my-template.docx
+```
